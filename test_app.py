@@ -15,4 +15,5 @@ class FlaskAppTests(unittest.TestCase):
         bad_response = self.app.post('/')
         self.assertEqual(bad_response.status_code, 405)
 
-    
+if __name__ == "__main__":
+    unittest.main()
