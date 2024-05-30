@@ -20,7 +20,7 @@ jobs:
       - name: Create Virtual Environment
         run: |
           python -m venv venv
-          source venv/vin/activate
+          source venv/bin/activate
       
       - name: Install project dependencies
         run: |
@@ -36,7 +36,7 @@ jobs:
 
   test:
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: Checkout Code
         uses: actions/checkout@v2
